@@ -47,7 +47,7 @@ const visitBase = () => {
   return new Promise((resolve, reject) => {
     console.log('Getting an owner token');
     request.get('https://gleam.io/OyyAH/enter-to-win-3-tickets-to-marshmello-at-concord-music-hall')
-      .proxy(PROXY)
+      // .proxy(PROXY)
       .end((err, res) => {
         if (err || !res.ok) {
           console.log(err);
